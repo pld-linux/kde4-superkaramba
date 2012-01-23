@@ -12,6 +12,7 @@ Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
 # Source0-md5:	554c3e5dd470b2428f5792cd72224fdf
 URL:		http://www.kde.org/
+BuildRequires:	python-devel
 BuildRequires:	qimageblitz-devel >= 0.0.6
 Obsoletes:	kde4-kdeutils-superkaramba < 4.6.99
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -56,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libsuperkaramba.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libsuperkaramba.so.?
 %{_desktopdir}/kde4/superkaramba.desktop
-%{_datadir}/apps/superkaramba/superkarambaui.rc
+%{_datadir}/apps/superkaramba
 %{_datadir}/config/superkaramba.knsrc
 %{_datadir}/dbus-1/interfaces/org.kde.superkaramba.xml
 %{_iconsdir}/hicolor/*x*/apps/superkaramba.png
