@@ -5,12 +5,12 @@
 Summary:	Little interactive widgets on KDE desktop
 Summary(pl.UTF-8):	Małe interaktywne widżety na pulpicie KDE
 Name:		kde4-superkaramba
-Version:	4.12.1
+Version:	4.12.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	bd625a1914f4ec8b1401f34a0a379981
+# Source0-md5:	b9fa115fbf8b84dbb469dd5c058b0b4b
 URL:		http://www.kde.org/
 BuildRequires:	python-devel
 BuildRequires:	qimageblitz-devel >= 0.0.6
